@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, initial-scale=1.0, viewport-fit=cover">
+    <title>用户服务协议 | 法律条款</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f8f9fc;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            line-height: 1.55;
+            color: #1f2d3d;
+            padding: 2rem 1rem;
+        }
+
+        /* 协议卡片容器 */
+        .legal-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 28px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05), 0 4px 8px rgba(0, 0, 0, 0.02);
+            overflow: hidden;
+            transition: all 0.2s ease;
+        }
+
+        /* 头部装饰条 + 标题区 */
+        .legal-header {
+            background: linear-gradient(135deg, #1e2b3c 0%, #0f1a24 100%);
+            padding: 2rem 2.5rem;
+            color: white;
+        }
+
+        .legal-header h1 {
+            font-size: 1.9rem;
+            font-weight: 600;
+            letter-spacing: -0.3px;
+            margin-bottom: 0.5rem;
+        }
+
+        .legal-header .sub {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            border-left: 3px solid #4c9aff;
+            padding-left: 0.75rem;
+            margin-top: 0.5rem;
+        }
+
+        /* 日期行 */
+        .date-row {
+            background-color: #fef9e6;
+            border-bottom: 1px solid #f0e5cf;
+            padding: 0.9rem 2.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            font-size: 0.85rem;
+            color: #a05c15;
+            font-weight: 500;
+        }
+
+        .date-row span {
+            background: #fff1d6;
+            padding: 0.2rem 0.8rem;
+            border-radius: 30px;
+            display: inline-block;
+        }
+
+        /* 正文区域 */
+        .legal-content {
+            padding: 2rem 2.5rem;
+        }
+
+        /* 章节样式 */
+        .section {
+            margin-bottom: 2rem;
+            scroll-margin-top: 1rem;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #0f2b3d;
+            border-left: 4px solid #2c7da0;
+            padding-left: 1rem;
+            margin-bottom: 1.2rem;
+            margin-top: 0.2rem;
+        }
+
+        .subsection {
+            margin: 1.2rem 0 0.8rem 0;
+        }
+
+        .subsection-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #2c3e4e;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            margin-bottom: 0.85rem;
+            line-height: 1.6;
+            color: #2c3e50;
+        }
+
+        .highlight {
+            background-color: #f9f3e3;
+            padding: 0.1rem 0.2rem;
+            border-radius: 6px;
+            font-weight: 500;
+            color: #b45309;
+        }
+
+        ul, .custom-list {
+            margin: 0.8rem 0 1rem 1.8rem;
+        }
+
+        li {
+            margin: 0.5rem 0;
+            line-height: 1.55;
+        }
+
+        .badge-note {
+            background-color: #eef2fa;
+            padding: 0.9rem 1.2rem;
+            border-radius: 16px;
+            margin: 1rem 0;
+            font-size: 0.9rem;
+            border-left: 3px solid #3b82f6;
+            color: #1f3a5f;
+        }
+
+        .contact-box {
+            background-color: #f0f6fe;
+            border-radius: 20px;
+            padding: 1.3rem 1.8rem;
+            margin-top: 1.8rem;
+            text-align: center;
+            border: 1px solid #d9e8f5;
+        }
+
+        .contact-email {
+            font-size: 1.2rem;
+            font-weight: 600;
+            font-family: monospace;
+            background: white;
+            display: inline-block;
+            padding: 0.4rem 1.2rem;
+            border-radius: 60px;
+            letter-spacing: 0.5px;
+            color: #1f4e7a;
+            margin: 0.5rem 0 0;
+            border: 1px solid #cbdde9;
+        }
+
+        .footer-note {
+            margin-top: 2rem;
+            padding-top: 1rem;
+            font-size: 0.75rem;
+            text-align: center;
+            color: #6c7a8a;
+            border-top: 1px solid #e4e9f0;
+        }
+
+        /* 响应式 */
+        @media (max-width: 700px) {
+            .legal-header {
+                padding: 1.5rem;
+            }
+            .legal-header h1 {
+                font-size: 1.6rem;
+            }
+            .legal-content {
+                padding: 1.5rem;
+            }
+            .section-title {
+                font-size: 1.35rem;
+            }
+            .date-row {
+                padding: 0.7rem 1.5rem;
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="legal-container">
+    <!-- 页眉区域 -->
+    <div class="legal-header">
+        <h1>用户服务协议</h1>
+        <div class="sub">尊敬的用户，请仔细阅读本协议，使用服务即表示同意全部条款</div>
+    </div>
+    <!-- 生效/更新日期 动态占位 -->
+    <div class="date-row">
+        <span>📅 生效日期： [2026.4.11]</span>
+        <span>🔄 最后更新： [2026.4.11]</span>
+    </div>
+
+    <div class="legal-content">
+        <!-- 一、总则 -->
+        <div class="section" id="preamble">
+            <div class="section-title">一、总则</div>
+            <p><strong>1.1</strong> 本协议是用户（以下简称“您”）与 <span class="highlight">[翠源通]</span>（以下简称“我们”）之间关于使用 <span class="highlight">APP</span> 的法律协议。</p>
+            <p><strong>1.2</strong> 注册或使用我们的服务即表示您同意遵守本协议及所有补充条款。若您不同意本协议的任何内容，请立即停止注册或停止使用服务。</p>
+        </div>
+
+        <!-- 二、服务内容 -->
+        <div class="section" id="service">
+            <div class="section-title">二、服务内容</div>
+            <p><strong>2.1</strong> 我们提供 <span class="highlight">[原石信息沟通平台]</span>。具体功能以实际提供为准，我们可能根据用户需求或法律法规调整服务内容。</p>
+            <p><strong>2.2</strong> 服务可能因业务调整、版本更新、系统维护等原因发生变更或部分中止。我们将通过站内公告、邮件或消息等方式提前或及时通知用户（紧急情况除外），请您留意相关动态。</p>
+        </div>
+
+        <!-- 三、用户权利与义务 -->
+        <div class="section" id="user-duties">
+            <div class="section-title">三、用户权利与义务</div>
+            <p><strong>3.1</strong> 您需保证注册信息的真实性、准确性及完整性，并妥善保管账户名、密码及安全验证信息。因您保管不当导致的损失由您自行承担。</p>
+            <p><strong>3.2</strong> 禁止利用我们的服务从事任何违法、侵权或违反公序良俗的行为，包括但不限于：</p>
+            <ul>
+                <li>发送垃圾信息、恶意广告、钓鱼链接（spam、诈骗内容）；</li>
+                <li>进行黑客攻击、病毒传播、分布式拒绝服务（DDoS）攻击等破坏网络安全的行为；</li>
+                <li>侵犯他人知识产权、商业秘密或人格权；</li>
+                <li>发布违法信息、煽动暴力、危害未成年人身心健康的内容；</li>
+                <li>其他违反适用法律法规或本协议的行为。</li>
+            </ul>
+            <p>如发现违反上述义务，我们有权立即终止服务并保留追究法律责任的权利。</p>
+        </div>
+
+        <!-- 四、隐私保护 -->
+        <div class="section" id="privacy">
+            <div class="section-title">四、隐私保护</div>
+            <p><strong>4.1</strong> 您的个人信息将严格按照我们发布的《隐私政策》进行处理与保护。我们重视您的数据安全，不会非法向第三方出售或共享个人信息。请仔细阅读并了解《隐私政策》中关于信息收集、使用、存储及您个人权利的详细内容。</p>
+            <div class="badge-note">
+                🔐 提示：为保障您的权益，请一并查阅《隐私政策》，了解我们如何保护您的个人数据。
+            </div>
+        </div>
+
+        <!-- 五、免责声明 -->
+        <div class="section" id="disclaimer">
+            <div class="section-title">五、免责声明</div>
+            <p><strong>5.1</strong> 我们不对因不可抗力（包括但不限于自然灾害、战争、政府行为、电信技术故障、政策法规变化、公共网络瘫痪等）导致的服务中断、数据丢失或履行延迟承担责任。</p>
+            <p><strong>5.2</strong> 用户因自身操作失误、账号信息泄露、未遵守平台指引或错误使用服务而造成的损失，需自行承担相应责任。</p>
+            <p><strong>5.3</strong> 对于通过我们服务而接入的第三方链接或资源，我们不保证其可靠性、可用性，用户访问第三方内容所产生的风险由用户自行承担。</p>
+        </div>
+
+        <!-- 六、协议修改与终止 -->
+        <div class="section" id="modify-termination">
+            <div class="section-title">六、协议修改与终止</div>
+            <p><strong>6.1</strong> 我们有权根据法律法规变化或运营需要适时修改本协议。修改后的协议将通过网站公告、应用内通知或其他显著方式公布，修改内容自公布之日起生效。如您继续使用服务，视为接受修改后的条款。</p>
+            <p><strong>6.2</strong> 用户可随时申请注销账户（依照平台流程），我们将依法删除或匿名化您的个人信息。同时，若您违反本协议约定，我们保留单方中止或终止向您提供服务的权利，并有权追究违约责任。</p>
+            <p><strong>6.3</strong> 协议终止后，您应当停止使用我们的服务，且因过往使用行为产生的法律责任不因协议终止而免除。</p>
+        </div>
+
+        <!-- 补充说明：争议与法律适用 -->
+        <div class="section" id="governance">
+            <div class="section-title">七、法律适用与争议解决</div>
+            <p><strong>7.1</strong> 本协议的订立、执行和解释均适用中华人民共和国法律（不考虑冲突法规则）。</p>
+            <p><strong>7.2</strong> 因本协议引起的或与之相关的任何争议，双方应友好协商解决；协商不成的，任何一方均可将争议提交至<span class="highlight">[公司注册地/协议签订地]</span>有管辖权的人民法院诉讼解决。</p>
+        </div>
+
+        <!-- 联系邮箱区域 -->
+        <div class="contact-box">
+            <div style="font-weight: 500; margin-bottom: 8px;">📧 如有疑问或需要协助</div>
+            <div>请通过官方联系邮箱与我们沟通：</div>
+            <div class="contact-email">[dervisocalyong@icloud.com]</div>
+            <div style="font-size: 0.8rem; margin-top: 12px;">我们将在7个工作日内认真处理您的反馈</div>
+        </div>
+
+        <!-- 结尾提示：用户确认 -->
+        <div class="footer-note">
+            © 2026 [翠源通] 版权所有 · 本协议自生效日起具有法律约束力<br>
+            若您对本协议有任何异议，应立即停止使用我们的服务。
+        </div>
+    </div>
+</div>
+
+<!-- 简单占位符替换提醒控制台提示（友好提醒） -->
+<script>
+    (function() {
+        // 仅用于开发友好提醒：不覆盖实际占位符文本，便于用户自行替换
+        const placeholders = [
+            '[填写日期]', '[公司/平台名称]', '[产品/服务名称]',
+            '[具体服务描述，如：软件使用、在线咨询、电商平台等]',
+            '[您的客服邮箱]', '[公司注册地/协议签订地]'
+        ];
+        let hasPlaceholder = false;
+        const bodyText = document.body.innerText;
+        for (let ph of placeholders) {
+            if (bodyText.includes(ph)) {
+                hasPlaceholder = true;
+                break;
+            }
+        }
+        if (hasPlaceholder) {
+            console.log("📋 [用户协议提示] 当前页面包含占位符文本，请根据您的实际业务替换“[]”中的内容（生效日期、公司名、服务描述、邮箱等），确保协议合规。");
+        }
+    })();
+</script>
+</body>
+</html>
